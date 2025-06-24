@@ -18,7 +18,7 @@ function PostForm() {
     e.preventDefault();
     // console.log(formData)
     try {
-      await axios.post('http://localhost:5000/api/posts', formData);
+      await axios.post('appsail-50028746826.development.catalystappsail.in/api/posts', formData);
       alert('Post submitted!');
       setFormData({ title: '', image: '', rating: '', username: '' });
     } catch (err) {
